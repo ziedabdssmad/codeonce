@@ -1,17 +1,38 @@
 <div class="container">
-  <h1>Développement d'un micro-service permettant de retourner le nombre de ponctuation dans un texte.</h1>
-  <form [formGroup]="InputForm" (ngSubmit)="submit()">
-    <div class="form-group col-md-8">
-      <h1>Tapez un texte</h1>
-      <div class="col-sm-9">
-        <input class="form-control" formControlName="phrase" id="colFormLabel" placeholder="Tapez un texte ...">
-      </div>
+    <!--<h5 class="my-4">Le nombre de ponctuation dans ce texte : {{occurences}} </h5>
+    <form [formGroup]="InputForm" (ngSubmit)="submit()">
+        <div class="form-group col-md-8 mt-5">
+            <h1></h1>
+            <div class="col-sm-9 mt-4">
+                <input class="form-control" formControlName="phrase" id="colFormLabel" placeholder="Tapez un texte ...">
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-primary mt-3">Send</button>
+            </div>
+        </div>
+
+    </form>
+  -->
+
+    <div class="card mt-5">
+        <div class="card-header">
+            Développement d'un micro-service permettant de retourner le nombre de ponctuation dans un texte.
+        </div>
+        <div class="card-body">
+            <!-- <h3 class="card-title">Tapez un texte</h3> -->
+            <div class="card-text">
+                <form [formGroup]="InputForm" (ngSubmit)="submit()">
+                    <div class="form-group col-md-8 mt-1">
+                        <div class="col-sm-9 mt-2">
+                            <input class="form-control" formControlName="phrase" id="colFormLabel" placeholder="Tapez un texte ...">
+                        </div>
+                    </div>
+                    <h5 class="my-4 ml-5">Le nombre de ponctuation dans ce texte : {{occurences}} </h5>
+                    <button class="btn btn-primary mt-1 ml-5">Send</button>
+                </form>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-      <button class="btn btn-primary">Send</button>
-    </div>
-  </form>
-  <div>{{occurences}}</div>
 
 
 </div>

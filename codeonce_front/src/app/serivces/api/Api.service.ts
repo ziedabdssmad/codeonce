@@ -10,6 +10,6 @@ export class ApiService {
   }
 
   sendInput(input) {
-    return this.http.post('http://localhost:8090/send', input);
+    return this.http.post('http://localhost:8091/send', input);
   }
 }
