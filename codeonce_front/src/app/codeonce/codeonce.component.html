@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Développement d'un micro-service permettant de retourner le nombre de ponctuation dans un texte.</h1>
+  <form [formGroup]="InputForm" (ngSubmit)="submit()">
+    <div class="form-group col-md-8">
+      <h1>Tapez un texte</h1>
+      <div class="col-sm-9">
+        <input class="form-control" formControlName="phrase" id="colFormLabel" placeholder="Tapez un texte ...">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-primary">Send</button>
+    </div>
+  </form>
+  <div>{{occurences}}</div>
+
+
+</div>
